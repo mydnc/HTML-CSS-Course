@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test File</title>
+  <style>
+    h1{
+      /* removes element from browser */
+      /* display: none; */
+      /* visibility: hidden; */
+      /* the difference is visibility removes the element but keeps its space */
+      color: blue !important;
+      /* !important overrides css frameworks or other external stylesheets */
+      /* in case removing !important the .hello will be overriding h1 */
+    }
+
+    /* tragetting the class overrides the targetting the actual element*/
+    .hello{
+      color: red;
+      /* if you want to keep !important in h1 and override it with .hello
+      then use !important in .hello */
+
+      /* negative margin */
+      margin-top: -30px;
+      margin-left: -30px;
+      /* negative padding is not possible */
+    }
+  </style>
+</head>
+<body>
+  <h1 class="hello">Hello World</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nihil tempore ad? Ea minus, illum aliquam doloremque nostrum illo impedit?</p>
+</body>
+</html>

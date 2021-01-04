@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block Sytling</title>
+  <style>
+
+    li{
+      /*conver block element into inline element */
+      display: inline;
+    }
+    
+    li a{
+      padding-right: 20px;
+    }
+
+    img{
+      /*conver inline element into block element */
+      display: block;
+      margin: auto;
+    }
+
+    .box{
+      width: 32%;
+      /* usage of following comment will produce error with the usage of width and margin-bottom. to avoid it we use display: inline-block*/
+      /* display: inline; */
+      display: inline-block;
+      box-sizing: border-box;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br>
+  <br>
+  <img src="./img/leaf2.png" alt="My image">
+
+  <br><br>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae officia modi dolorum neque a quae quo magni dicta aliquid.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae officia modi dolorum neque a quae quo magni dicta aliquid.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit beatae officia modi dolorum neque a quae quo magni dicta aliquid.</p>
+  </div>
+</body>
+</html>
